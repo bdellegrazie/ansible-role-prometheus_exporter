@@ -1,0 +1,3 @@
+---
+prometheus_exporter_service_packages:
+  - daemonize

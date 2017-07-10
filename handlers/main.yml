@@ -1,0 +1,5 @@
+---
+- name: reload systemd daemon
+  become: true
+  become_user: root
+  command: /usr/bin/systemctl daemon-reload

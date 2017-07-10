@@ -1,0 +1,3 @@
+---
+prometheus_exporter_ansible_packages:
+  - libselinux-python

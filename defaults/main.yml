@@ -1,0 +1,6 @@
+---
+prometheus_exporter_dir: "/opt/prometheus/exporters"
+prometheus_exporter_dist_dir: "{{ prometheus_exporter_dir }}/dist"
+prometheus_exporter_service_mgr: "{{ ansible_service_mgr }}"
+prometheus_exporter_ansible_packages: []
+prometheus_exporter_service_packages: []

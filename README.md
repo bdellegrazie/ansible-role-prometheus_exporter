@@ -2,7 +2,7 @@
 
 Base role for Prometheus Exporters. Creates the distribution and exporter directories and sets up the service manager variable
 
-[![Build Status](https://travis-ci.org/bdellegrazie/ansible-role-prometheus_exporters.svg?branch=master)](https://travis-ci.org/bdellegrazie/ansible-role-prometheus_exporters)
+[![Build Status](https://travis-ci.org/bdellegrazie/ansible-role-prometheus_exporter.svg?branch=master)](https://travis-ci.org/bdellegrazie/ansible-role-prometheus_exporter)
 
 # Requirements
 

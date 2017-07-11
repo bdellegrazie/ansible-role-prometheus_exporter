@@ -6,13 +6,13 @@
     - vars-{{ ansible_distribution | lower }}-{{ ansible_distribution_major_version }}.yml
     - vars-family-{{ ansible_os_family | lower }}-{{ ansible_distribution_major_version }}.yml
     - vars-family-{{ ansible_os_family | lower }}.yml
-    - vars-default.yml
+    - vars-empty.yml
 
 - name: Load Service Manager Specific Variables
   include_vars: "{{ item }}"
   with_first_found:
-    - service-{{ prometheus_exporter_service_mgr }}.yml
-    - service-default.yml
+    - vars-service-{{ prometheus_exporter_service_mgr }}.yml
+    - vars-empty.yml
 
 - name: Install Dependencies
   become: true

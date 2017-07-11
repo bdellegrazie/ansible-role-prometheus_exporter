@@ -11,7 +11,7 @@
 - name: Load Service Manager Specific Variables
   include_vars: "{{ item }}"
   with_first_found:
-    - service-{{ prometheus_service_mgr }}.yml
+    - service-{{ prometheus_exporter_service_mgr }}.yml
     - service-default.yml
 
 - name: Install Dependencies

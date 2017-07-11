@@ -1,2 +1,0 @@
----
-prometheus_service_mgr: "{{ ansible_service_mgr }}"

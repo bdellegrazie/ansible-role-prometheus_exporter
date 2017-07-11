@@ -33,4 +33,4 @@ GPLv3
 Author Information
 ------------------
 
-https://github.com/bdellegrazie/ansible-role-prometheus_exporters
+https://github.com/bdellegrazie/ansible-role-prometheus_exporter

@@ -1,6 +1,6 @@
 ---
 # Don't use upstart here - its too old
-prometheus_service_mgr: sysvinit
+prometheus_exporter_service_mgr: sysvinit
 
 prometheus_exporter_ansible_packages:
   - libselinux-python

@@ -17,7 +17,7 @@ provisioner:
   ansible_version: latest
   ansible_host_key_checking: false
   ansible_extra_flags: <%= ENV['ANSIBLE_EXTRA_FLAGS'] %>
-  update_package_repos: false
+  update_package_repos: true
   group_vars_path: test/integration/group_vars
   env_vars:
     ANSIBLE_FORCE_COLOR: 1
@@ -52,22 +52,6 @@ platforms:
       volume:
         - /sys/fs/cgroup:/sys/fs/cgroup:ro
       command: /usr/lib/systemd/systemd
-  - name: ubuntu-12.04
-    driver_config:
-      platform: ubuntu
-      image: bdellegrazie/docker-ubuntu1204-ansible:latest
-      privileged: true
-      volume:
-        - /sys/fs/cgroup:/sys/fs/cgroup:ro
-      command: /sbin/init
-  - name: ubuntu-14.04
-    driver_config:
-      platform: ubuntu
-      image: bdellegrazie/docker-ubuntu1404-ansible:latest
-      privileged: true
-      volume:
-        - /sys/fs/cgroup:/sys/fs/cgroup:ro
-      command: /sbin/init
   - name: ubuntu-16.04
     driver_config:
       platform: ubuntu
@@ -76,7 +60,7 @@ platforms:
       #security_opt: seccomp=unconfined
       volume:
         - /sys/fs/cgroup:/sys/fs/cgroup:ro
-      command: /lib/systemd/systemd
+      command: /sbin/init
       stop_signal: SIGRTMIN+3
       tmpfs:
         - /run

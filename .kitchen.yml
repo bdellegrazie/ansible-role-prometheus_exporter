@@ -28,7 +28,6 @@ provisioner:
     - test
     - vendor
   idempotency_test: true
-  max_retries: 2
 
 platforms:
   - name: centos-6

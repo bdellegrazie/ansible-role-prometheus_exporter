@@ -6,7 +6,7 @@ env:
     - distro=centos version='6'
     - distro=centos version='7'
     - distro=debian version='8'
-    - distro=ubuntu version='1604'
+    #- distro=ubuntu version='1604'
     - distro=fedora version='25'
 
 language: ruby

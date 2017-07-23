@@ -28,6 +28,7 @@ provisioner:
     - test
     - vendor
   idempotency_test: true
+  max_retries: 2
 
 platforms:
   - name: centos-6
@@ -47,11 +48,11 @@ platforms:
   - name: debian-8
     driver_config:
       platform: debian
-      image: geerlingguy/docker-debian8-ansible:latest
+      image: bdellegrazie/docker-debian8-ansible:latest
       privileged: true
       volume:
         - /sys/fs/cgroup:/sys/fs/cgroup:ro
-      command: /usr/lib/systemd/systemd
+      command: /lib/systemd/systemd
   - name: ubuntu-16.04
     driver_config:
       platform: ubuntu
@@ -60,7 +61,7 @@ platforms:
       #security_opt: seccomp=unconfined
       volume:
         - /sys/fs/cgroup:/sys/fs/cgroup:ro
-      command: /sbin/init
+      command: /lib/systemd/systemd
       stop_signal: SIGRTMIN+3
       tmpfs:
         - /run

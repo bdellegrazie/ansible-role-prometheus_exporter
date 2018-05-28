@@ -1,5 +1,0 @@
----
-- hosts: all
-  roles:
-  - bdellegrazie.ansible-role-serverspec_test_dependencies
-  - ansible-role-prometheus_exporter

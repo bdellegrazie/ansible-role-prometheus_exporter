@@ -4,12 +4,12 @@ sudo: required
 env:
   matrix:
     - distro: centos7
-    - distro: centos6
+    #- distro: centos6 Disabled until upstream Dockerfile SNI change is merged
     - distro: fedora27
     - distro: ubuntu1804
     - distro: ubuntu1604
     - distro: ubuntu1404
-    - distro: ubuntu1204
+    #- distro: ubuntu1204 doesn't support SNI either so galaxy fails
     - distro: debian9
     - distro: debian8
 

@@ -3,4 +3,4 @@
   become: true
   become_user: root
   systemd:
-    daemon-reload: yes
+    daemon-reload: true

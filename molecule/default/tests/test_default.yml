@@ -1,0 +1,7 @@
+---
+# Goss tests
+file:
+  /opt/prometheus/exporters/dist:
+    exists: true
+    mode: "0755"
+    filetype: directory

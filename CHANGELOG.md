@@ -12,6 +12,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 ### Security
 
+## [v1.1.1] 2019-08-11
+### Fixed
+- Fixup lookup syntax correctly
+- Ansible 2.8.3 support
+- Pre-commit update (minor)
+
 ## [v1.1.0] 2019-07-16
 ### Changed
 - Ansible 2.8.2 support. Loop syntax updated
@@ -23,7 +29,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Molecule update (minor)
 - Pre-commit update (minor)
 
-[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.1.1...HEAD
+[v1.1.1]: https://github.com/bdellegrazie/ansible-role-prometheus_exporter/compare/v1.1.0...v1.1.1
 [v1.1.0]: https://github.com/bdellegrazie/ansible-role-prometheus_exporter/compare/v1.0.16...v1.1.0
 [v1.0.16]: https://github.com/bdellegrazie/ansible-role-prometheus_exporter/compare/v1.0.15...v1.0.16
 [v1.0.15]: https://github.com/bdellegrazie/ansible-role-prometheus_exporter/compare/v1.0.14...v1.0.15

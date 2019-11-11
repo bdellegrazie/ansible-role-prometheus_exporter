@@ -20,6 +20,7 @@
     params:
       files:
         - "vars-service-{{ prometheus_exporter_service_mgr }}.yml"
+        - "vars-service-default.yml"
       paths:
         - "vars"
       skip: true

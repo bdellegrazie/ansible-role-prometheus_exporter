@@ -12,6 +12,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixed
 ### Security
 
+## [v1.1.3] 2020-01-10
+### Changed
+- Update Ansible for testing to 2.9.2
+- Minor pre-commit updates
+
+## [v1.1.2] 2019-11-11
+### Fixed
+- Provide default service-mgr configuration (empty). This avoids an issue with Ansible 2.9.0.
+
 ## [v1.1.1] 2019-08-11
 ### Fixed
 - Fixup lookup syntax correctly
@@ -29,7 +38,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Molecule update (minor)
 - Pre-commit update (minor)
 
-[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.1.3...HEAD
+[v1.1.3]: https://github.com/bdellegrazie/ansible-role-prometheus_exporter/compare/v1.1.2...v1.1.3
+[v1.1.2]: https://github.com/bdellegrazie/ansible-role-prometheus_exporter/compare/v1.1.1...v1.1.2
 [v1.1.1]: https://github.com/bdellegrazie/ansible-role-prometheus_exporter/compare/v1.1.0...v1.1.1
 [v1.1.0]: https://github.com/bdellegrazie/ansible-role-prometheus_exporter/compare/v1.0.16...v1.1.0
 [v1.0.16]: https://github.com/bdellegrazie/ansible-role-prometheus_exporter/compare/v1.0.15...v1.0.16

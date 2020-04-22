@@ -31,7 +31,6 @@
   package:
     name: "{{ prometheus_exporter_ansible_packages | union( prometheus_exporter_service_packages ) | unique }}"
     state: present
-  tags: ["skip_ansible_lint"]
 
 - name: Distribution Directory
   become: true

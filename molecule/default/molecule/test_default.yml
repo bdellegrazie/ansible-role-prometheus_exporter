@@ -1,5 +1,5 @@
 ---
-# Goss tests
+# Molecule managed
 file:
   /opt/prometheus/exporters/dist:
     exists: true

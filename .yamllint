@@ -3,6 +3,7 @@ extends: default
 ignore: |
   .pre-commit-config.yaml
   .travis.yml
+  .venv/
 
 rules:
   braces:

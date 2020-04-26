@@ -7,10 +7,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 ### Changed
+- Update Goss testing tool to v0.3.10
 ### Deprecated
 ### Removed
 ### Fixed
 ### Security
+
+## [v2.0.1]
+### Changed
+- Ensure Centos 6 support is noted
+
+## [v2.0.0]
+### Changed
+- Upgraded to use Ansible 2.9.6
+- Uses Molecule 3 for testing
+- Supports Ubuntu 20.04 and Debian 10
 
 ## [v1.1.3] 2020-01-10
 ### Changed
@@ -38,7 +49,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Molecule update (minor)
 - Pre-commit update (minor)
 
-[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.1.3...HEAD
+[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v2.0.1...HEAD
+[v2.0.1]: https://github.com/bdellegrazie/ansible-role-prometheus_exporter/compare/v2.0.0...v2.0.1
+[v2.0.0]: https://github.com/bdellegrazie/ansible-role-prometheus_exporter/compare/v1.1.3...v2.0.0
 [v1.1.3]: https://github.com/bdellegrazie/ansible-role-prometheus_exporter/compare/v1.1.2...v1.1.3
 [v1.1.2]: https://github.com/bdellegrazie/ansible-role-prometheus_exporter/compare/v1.1.1...v1.1.2
 [v1.1.1]: https://github.com/bdellegrazie/ansible-role-prometheus_exporter/compare/v1.1.0...v1.1.1

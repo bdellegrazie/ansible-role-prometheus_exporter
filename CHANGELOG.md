@@ -7,17 +7,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Added
 ### Changed
-- Update Goss testing tool to v0.3.10
+- Ansible 2.9.9
 ### Deprecated
 ### Removed
 ### Fixed
 ### Security
 
-## [v2.0.1]
+## [v2.0.2] 2020-06-05
+### Changed
+- Update Goss testing tool to v0.3.10
+
+## [v2.0.1] 2020-04-26
 ### Changed
 - Ensure Centos 6 support is noted
 
-## [v2.0.0]
+## [v2.0.0] 2020-04-22
 ### Changed
 - Upgraded to use Ansible 2.9.6
 - Uses Molecule 3 for testing

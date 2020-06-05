@@ -6,6 +6,7 @@
       apt:
         update_cache: true
       when: (ansible_os_family | lower) == 'debian'
+      ignore_errors: true  # Debian 9/10 snapshots expire
 
     - name: Update package cache (Redhat)
       become: true

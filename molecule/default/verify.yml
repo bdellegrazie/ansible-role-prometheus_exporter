@@ -27,6 +27,9 @@
       file:
         path: "{{ goss_test_directory }}"
         state: directory
+        owner: root
+        group: root
+        mode: "u=rwx,go=rx"
 
     - name: Find Goss tests on localhost
       find:
@@ -51,6 +54,9 @@
       copy:
         src: "{{ item.path }}"
         dest: "{{ goss_test_directory }}/{{ item.path | basename }}"
+        owner: root
+        group: root
+        mode: "u=rw,g=r,o="
       with_items:
         - "{{ test_files.files }}"
       loop_control:
@@ -77,10 +83,14 @@
           debug:
             msg: "{{ item.stdout_lines }}"
           with_items: "{{ test_results.results }}"
+          loop_control:
+            label: "{{ item[item.ansible_loop_var] | basename }}"
 
         - name: Fail when tests fail
           fail:
             msg: "Goss failed to validate"
           when: item.rc != 0
           with_items: "{{ test_results.results }}"
+          loop_control:
+            label: "{{ item[item.ansible_loop_var] | basename }}"
       when: test_files is succeeded
